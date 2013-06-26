@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Header Files\zlib">
+      <UniqueIdentifier>{2c6dbe23-e40d-4e5e-bca4-7e564d7950f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zlib">
+      <UniqueIdentifier>{b6e5fcbe-66c7-4efe-8882-e878618e9baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\zipengine">
+      <UniqueIdentifier>{6a0998be-2eff-477e-9efb-b4fd7c6b87af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\zipengine">
+      <UniqueIdentifier>{16b1cd1f-cbfd-41cf-82c2-59028a724ceb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\zlib\crc32.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\deflate.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\inffast.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\inffixed.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\inflate.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\inftrees.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\trees.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\zconf.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\zlib.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zlib\zutil.h">
+      <Filter>Header Files\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zipengine\crypt.h">
+      <Filter>Header Files\zipengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zipengine\ioapi.h">
+      <Filter>Header Files\zipengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zipengine\unzip.h">
+      <Filter>Header Files\zipengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\zipengine\zip.h">
+      <Filter>Header Files\zipengine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\zlib\adler32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\compress.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\crc32.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\deflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\gzio.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\infback.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\inffast.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\inflate.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\inftrees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\trees.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\uncompr.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zlib\zutil.c">
+      <Filter>Source Files\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zipengine\bmxsupport.c">
+      <Filter>Source Files\zipengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zipengine\ioapi.c">
+      <Filter>Source Files\zipengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zipengine\unzip.c">
+      <Filter>Source Files\zipengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\zipengine\zip.c">
+      <Filter>Source Files\zipengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
