@@ -11,10 +11,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\zipengine\crypt.h" />
-    <ClInclude Include="..\include\zipengine\ioapi.h" />
-    <ClInclude Include="..\include\zipengine\unzip.h" />
-    <ClInclude Include="..\include\zipengine\zip.h" />
+    <ClInclude Include="..\include\crypt.h" />
+    <ClInclude Include="..\include\ioapi.h" />
+    <ClInclude Include="..\include\unzip.h" />
+    <ClInclude Include="..\include\zip.h" />
     <ClInclude Include="..\include\zlib\crc32.h" />
     <ClInclude Include="..\include\zlib\deflate.h" />
     <ClInclude Include="..\include\zlib\inffast.h" />
@@ -27,10 +27,10 @@
     <ClInclude Include="..\include\zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\zipengine\bmxsupport.c" />
-    <ClCompile Include="..\src\zipengine\ioapi.c" />
-    <ClCompile Include="..\src\zipengine\unzip.c" />
-    <ClCompile Include="..\src\zipengine\zip.c" />
+    <ClCompile Include="..\src\bmxsupport.c" />
+    <ClCompile Include="..\src\ioapi.c" />
+    <ClCompile Include="..\src\unzip.c" />
+    <ClCompile Include="..\src\zip.c" />
     <ClCompile Include="..\src\zlib\adler32.c" />
     <ClCompile Include="..\src\zlib\compress.c" />
     <ClCompile Include="..\src\zlib\crc32.c" />
@@ -85,7 +85,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\include;..\include\zlib;..\include\zipengine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;..\include\zlib;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>CURL_STATICLIB;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -109,7 +109,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\include;..\include\zlib;..\include\zipengine</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\include;..\include\zlib;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>CURL_STATICLIB;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>

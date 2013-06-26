@@ -19,12 +19,6 @@
     <Filter Include="Source Files\zlib">
       <UniqueIdentifier>{b6e5fcbe-66c7-4efe-8882-e878618e9baa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\zipengine">
-      <UniqueIdentifier>{6a0998be-2eff-477e-9efb-b4fd7c6b87af}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\zipengine">
-      <UniqueIdentifier>{16b1cd1f-cbfd-41cf-82c2-59028a724ceb}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\zlib\crc32.h">
@@ -57,17 +51,17 @@
     <ClInclude Include="..\include\zlib\zutil.h">
       <Filter>Header Files\zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\zipengine\crypt.h">
-      <Filter>Header Files\zipengine</Filter>
+    <ClInclude Include="..\include\crypt.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\zipengine\ioapi.h">
-      <Filter>Header Files\zipengine</Filter>
+    <ClInclude Include="..\include\ioapi.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\zipengine\unzip.h">
-      <Filter>Header Files\zipengine</Filter>
+    <ClInclude Include="..\include\unzip.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\zipengine\zip.h">
-      <Filter>Header Files\zipengine</Filter>
+    <ClInclude Include="..\include\zip.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -107,17 +101,17 @@
     <ClCompile Include="..\src\zlib\zutil.c">
       <Filter>Source Files\zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\zipengine\bmxsupport.c">
-      <Filter>Source Files\zipengine</Filter>
+    <ClCompile Include="..\src\bmxsupport.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\zipengine\ioapi.c">
-      <Filter>Source Files\zipengine</Filter>
+    <ClCompile Include="..\src\ioapi.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\zipengine\unzip.c">
-      <Filter>Source Files\zipengine</Filter>
+    <ClCompile Include="..\src\unzip.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\zipengine\zip.c">
-      <Filter>Source Files\zipengine</Filter>
+    <ClCompile Include="..\src\zip.c">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
