@@ -1,0 +1,27 @@
+env = Environment()
+platform = env['PLATFORM']
+
+TARGET = 'zipengine'
+DEBUG = int(ARGUMENTS.get('DEBUG', '0'))
+if DEBUG:
+	TARGET += '_d'
+
+CFLAGS = ''
+INCLUDES = [Dir('../include').abspath]
+
+if platform == 'darwin':
+	CFLAGS += ' -arch i386 -mmacosx-version-min=10.7 ' + \
+			' -fpascal-strings '
+
+if DEBUG:
+	CFLAGS += '-g -O0 '
+else:
+	CFLAGS += '-g0 -O3 '
+
+SOURCES = ['bmxsupport.c', 'ioapi.c', 'unzip.c', 'zip.c']
+SOURCES = [File('../src/' + s).abspath for s in SOURCES]
+
+env.Append(CPPPATH = INCLUDES)
+env.Append(CFLAGS = Split(CFLAGS))
+
+env.StaticLibrary(target = TARGET, source = SOURCES)
